@@ -1,0 +1,173 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  .scroll-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+
+    &:hover {
+      i {
+        transition: all 0.4s ease-in-out;
+        opacity: 0.6;
+      }
+    }
+
+    i {
+      color: var(--button-color);
+    }
+  }
+}
+.nav-tabs {
+  border-bottom: unset;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: unset;
+}
+.logo-f {
+  font-size: 42px;
+}
+
+.mt_m50 {
+  margin-top: -3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-black);
+  font-family: "PT Sans", sans-serif;
+}
+
+.input-group input {
+  border: none;
+
+  &:focus {
+    box-shadow: none !important;
+    border: none !important;
+    background: rgba($color-white, 0.95);
+  }
+}
+
+.section_padding {
+  padding: 100px 0px;
+
+  @media (max-width: 767.98px) {
+    padding: 50px 0px;
+  }
+}
+
+.secondary-bg {
+  background: var(--bg-secondary);
+}
+
+.para-detailes {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-para-color);
+}
+
+.para-detailes-white {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-white);
+}
+
+.banner {
+  background-color: var(--bg-secondary);
+  width: 100%;
+
+  &.home-banner {
+    @media (max-width: 575.98px) {
+      padding-bottom: 162px;
+    }
+  }
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: unset;
+}
+
+.breadcrumb {
+  a {
+    color: var(--button-color);
+    font-weight: 600;
+  }
+
+  .breadcrumb-item {
+    &.active {
+      color: var(--color-white);
+    }
+  }
+}
+
+.button-primary {
+  a {
+    padding: 0.5rem 1.25rem;
+    background-color: var(--button-color);
+    color: var(--color-white);
+    transition: 0.4s all;
+
+    &:hover {
+      transition: 0.4s all;
+      color: var(--button-color);
+      background: var(--color-white);
+      border: 1px solid var(--button-color);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 0.75rem;
+    }
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.button-secondary {
+  a {
+    padding: 0.5rem 1.25rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    transition: 0.4s all;
+
+    &:hover {
+      transition: 0.4s all;
+
+      background-color: var(--button-color);
+      color: var(--color-white);
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 0.75rem;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}

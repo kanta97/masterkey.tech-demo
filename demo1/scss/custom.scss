@@ -1,0 +1,25 @@
+/*** 01 Google Fonts ***/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+/*** 02 Colors ***/
+// scss -> common -> color
+@import "./common/color";
+
+// scss -> common -> mixin
+@import "./common/mixin";
+
+/*** 03 Global ***/
+// scss -> common -> global
+@import "./common/global";
+
+/*** 04 Header or NavBar ***/
+// scss -> common -> nav
+@import "./common/nav";
+
+/*** 06 Landing Page 01(index.html) ***/
+// scss -> pages -> landing-page1
+@import "./pages/landing-page1";
+
+/*** 28 Footer ***/
+// scss -> common -> footer
+@import "./common/footer";

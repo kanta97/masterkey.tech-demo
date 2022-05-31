@@ -1,0 +1,14 @@
+$primary-color: #644f9c;
+$color-white: #ffffff;
+$color-black: #404040;
+$button-color: #ff6f00;
+$bg-secondary: #f2f2f2;
+
+:root {
+  // RIGHT, will work in all Sass versions.
+  --primary-color: #{$primary-color};
+  --color-white: #{$color-white};
+  --button-color: #{$button-color};
+  --color-black: #{$color-black};
+  --bg-secondary: #{$bg-secondary};
+}

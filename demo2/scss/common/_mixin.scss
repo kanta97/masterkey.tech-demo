@@ -1,0 +1,42 @@
+@mixin effect($second) {
+  transition: all $second ease;
+}
+
+@mixin in_out($all) {
+  transition: all $all ease-in-out;
+}
+
+@mixin header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+@mixin para {
+  font-family: "Libre Baskerville", serif;
+  opacity: 0;
+  // font-style: italic;
+  font-size: 14px;
+}
+
+//   @include transition(0.5s)
+// @include transition_in_out($all)
+// @include header;
+// @include para;
+
+// Transform
+@mixin transformX($translateX) {
+  -webkit-transform: translateX($translateX);
+  -moz-transform: translateX($translateX);
+  -ms-transform: translateX($translateX);
+  -o-transform: translateX($translateX);
+  transform: translateX($translateX);
+}
+@mixin transform($scale) {
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -ms-transform: scale($scale);
+  -o-transform: scale($scale);
+  transform: scale($scale);
+}

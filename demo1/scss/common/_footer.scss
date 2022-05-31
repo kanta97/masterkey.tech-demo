@@ -1,0 +1,130 @@
+.footer {
+  width: 100%;
+
+  p {
+    margin-bottom: unset;
+  }
+
+  .footer_para {
+    opacity: 0.8;
+    font-size: 0.85rem;
+
+    a {
+      color: var(--color-black);
+      text-decoration: underline;
+      font-size: 0.85rem;
+    }
+  }
+
+  .footer_para_start {
+    opacity: 0.8;
+    font-size: 0.85rem;
+    padding-right: 3rem;
+
+    @media (max-width: 767.98px) {
+      padding-bottom: 1rem;
+      padding-right: 0rem;
+    }
+  }
+
+  .footer_header {
+    font-size: 18px;
+    margin-bottom: 2.5rem;
+    color: var(--primary-color);
+
+    @media (max-width: 991.98px) {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .footer_list {
+    ul {
+      padding-left: unset;
+      margin-bottom: unset;
+
+      li {
+        padding: 9px 0px 0px 0px;
+
+        a {
+          color: var(--color-black);
+          transition: 0.4s all;
+          opacity: 0.8;
+
+          &:hover {
+            color: var(--button-color);
+            transition: 0.4s all;
+            opacity: 1;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .social_icon {
+    padding-top: 1.5rem;
+
+    ul {
+      padding-left: unset;
+      margin-bottom: unset;
+
+      li {
+        padding: 0px 20px 0px 0px;
+
+        a {
+          font-size: 1.25rem;
+          color: var(--color-black);
+          transition: 0.4s all;
+
+          &:hover {
+            color: var(--button-color);
+            transition: 0.4s all;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      padding-top: 0.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 3rem;
+      padding-top: 0rem;
+    }
+  }
+
+  .btn_subscribe {
+    background-color: var(--primary-color);
+    color: var(--color-black);
+    transition: 0.4s all;
+
+    &:hover {
+      transition: 0.4s all;
+      color: var(--primary-color) !important;
+      color: var(--color-black);
+      border: 1px solid var(--color-white);
+    }
+  }
+
+  .sub_img {
+    background-color: var(--color-white);
+    margin-top: 1rem;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 0.125rem 0.25rem;
+    transition: 0.4s all;
+
+    &:hover {
+      opacity: 1;
+      transition: 0.4s all;
+    }
+  }
+}

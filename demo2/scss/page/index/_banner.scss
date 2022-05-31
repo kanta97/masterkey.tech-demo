@@ -1,0 +1,76 @@
+.banner {
+  .bg_img1 {
+    background-image: url("../image/banner/banner-2.jpg");
+    background-color: $theme-color-white;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    z-index: -1;
+    .banner-text {
+      h1 {
+        @include header;
+        font-size: 54px;
+        @media (max-width: 575.98px) {
+          font-size: 42px;
+        }
+      }
+
+      p {
+        color: #000;
+      }
+
+      a {
+        padding: 14px;
+        background: #000;
+        color: $theme-color-white;
+      }
+      transition: 0.5s all;
+      &:hover {
+        transition: 0.5s all;
+      }
+    }
+  }
+
+  .bg_img2 {
+    background-image: url("../image/banner/banner.jpg");
+    background-color: $theme-color-white;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    transition: 0.5s all;
+    .banner-text {
+      h1 {
+        @include header;
+        font-size: 54px;
+        @media (max-width: 575.98px) {
+          font-size: 42px;
+        }
+      }
+
+      p {
+        padding-bottom: 30px;
+        color: #000;
+      }
+
+      a {
+        padding: 14px;
+        background: #000;
+        color: $theme-color-white;
+      }
+      transition: 0.5s all;
+      &:hover {
+        transition: 0.5s all;
+      }
+    }
+  }
+}
